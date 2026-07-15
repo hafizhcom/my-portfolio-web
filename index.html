@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta
+      property="og:image"
+      content="https://my-portfolio-web-hafizh.vercel.app/og-image.png"
+    />
+  <meta property="og:title" content="Muhammad Hafizh Firdaus | Informatics Engineerings Student and Freelance Web Developer" />
+<meta property="og:description" content="Building an enjoyable web app experience." />
+<meta property="og:url" content="https://my-portfolio-web-hafizh.vercel.app/" />
+<meta property="og:type" content="website" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Muhammad Hafizh</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <img src="my-photo.jpeg" alt="Muhammad Hafizh">
+
+    <h2>Welcome to</h2>
+
+    <h1>My Portfolio Web</h1>
+
+
+    <p id="loading">Wait a moment......</p>
+
+</main>
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+}
+
+header{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 18px;
+}
+
+.social-icons a{
+    color: white;
+    transition: .3s;
+}
+
+.social-icons a:hover{
+    color: magenta;
+    transform: translateY(-4px) scale(1.15);
+}
+
+main{
+    min-height:calc(100vh - 80px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    animation:fade .8s ease;
+}
+
+img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+    background:white;
+    box-shadow:0 0 25px magenta;
+    margin-bottom:30px;
+}
+
+h2{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+h1{
+    color:magenta;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+#loading{
+    margin-top:40px;
+    font-size:16px;
+    color:#cfcfcf;
+    letter-spacing:1px;
+    animation:blink 1.2s infinite;
+}
+
+@keyframes blink{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:.3;
+    }
+}
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:768px){
+
+img{
+width:150px;
+height:150px;
+}
+
+h1{
+font-size:30px;
+}
+
+
+
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Otomatis masuk ke halaman utama setelah 3 detik
+setTimeout(() => {
+    document.body.style.transition = "opacity 0.8s ease";
+    document.body.style.opacity = "0";
+
+    setTimeout(() => {
+        window.location.href = "index-2.html";
+    }, 800);
+
+}, 3000);
+</script>
+
+</body>
+</html>

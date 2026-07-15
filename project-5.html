@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App Player/2</title>
+
+    <style>
+      body {
+        background-color: #0d0d0d;
+        min-height: 100vh;
+        padding: 0;
+      }
+
+      .section-title {
+        text-align: center;
+        color: magenta;
+        font-weight: 700;
+        margin-top: 80px;
+        letter-spacing: 1px;
+        margin-bottom: 35px;
+      }
+
+      .card {
+        background-color: #151515;
+        border: none;
+        border-radius: 14px;
+        overflow: hidden;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .card img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .card-title {
+        color: magenta;
+        font-weight: 600;
+      }
+
+      .card-text {
+        color: white;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: justify;
+      }
+
+      @media (max-width: 768px) {
+        .card img {
+          height: 220px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Judul -->
+      <h2 class="section-title">Word-guessing game development project</h2>
+
+      <!-- Card Project -->
+      <div class="card shadow-lg">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="project-game.jpeg" class="img-fluid" alt="Project dApp" />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body p-4">
+              <h5 class="card-title">Word-guessing game</h5>
+              <p class="card-text">
+                FyzzGames is a word-guessing game I developed and integrated
+                into an online store application, serving as an interactive tool
+                for customers to earn shopping discounts. Built using HTML, CSS,
+                and JavaScript—with Bootstrap for UI components and SweetAlert2
+                for interactive notifications—the game features 10 challenges
+                across three difficulty levels that must be completed
+                sequentially. Customers who successfully complete all challenges
+                and reach a specific score can instantly claim a discount coupon
+                via the game's built-in reward-claiming feature. In addition to
+                scoring and clue systems, the game includes dark mode,
+                background music, and a mobile-responsive design to enhance the
+                combined shopping and gaming experience. I designed and built
+                the entire game logic on the client side without a backend,
+                utilizing `localStorage` to store player data and reward-claim
+                status; this serves as a simple gamification strategy to boost
+                customer engagement and retention for the online store.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
